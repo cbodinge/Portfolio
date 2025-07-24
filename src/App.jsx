@@ -4,7 +4,7 @@ import PyGraphingPage from "./PyGraphingPage";
 
 export default function App() {
     return (
-        <Router>
+        <Router basename={"Portfolio"}>
             <Routes>
                 <Route path="/" element={<Portfolio/>}/>
                 <Route path="/psvg" element={<PSVGPage/>}/>
@@ -23,6 +23,27 @@ function Portfolio() {
                     LIMS Architect</p>
                 <p className="text-md text-gray-500">Little Rock, AR • (479) 567-4483 •
                     carterallenbodinger@yahoo.com</p>
+                <div className="flex gap-4 justify-center">
+                    <a href="https://github.com/cbodinge" target="_blank" aria-label="GitHub"
+                       className="hover:fill-science-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                             className="w-6 h-6 fill-science-info">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.76.08-.74.08-.74 1.21.09 1.85 1.25 1.85 1.25 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.13 0 0 1-.32 3.3 1.23a11.49 11.49 0 0 1 6 0C17 5.47 18 5.79 18 5.79c.66 1.63.24 2.83.12 3.13.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.58A12 12 0 0 0 24 12C24 5.37 18.63 0 12 0z"/>
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/carter-bodinger" target="_blank" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="science-info"
+                             className="w-6 h-6 fill-science-info"
+                             viewBox="0 0 24 24">
+                            <path
+                                d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.7v2.17h.07c.65-1.24 2.23-2.54 4.59-2.54 4.9 0 5.8 3.23 5.8 7.43V24h-5v-6.83c0-1.63-.03-3.72-2.27-3.72-2.28 0-2.63 1.78-2.63 3.61V24h-5V8z"/>
+                        </svg>
+                    </a>
+
+                </div>
+
             </header>
 
             <section className="section">
